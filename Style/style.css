@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+body {
+  max-width: 1280px;
+  min-width: 600px;
+  background: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  min-height: 240px;
+  overflow: hidden;
+  background: #445162;
+  padding: 50px;
+}
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+}
+header article {
+  float: left;
+}
+header .additional-block {
+  background: #ffffff;
+  float: right;
+  width: 40%;
+  min-height: 240px;
+  overflow: hidden;
+}
+.on-header {
+  margin-top: 30px;
+  list-style-type: none;
+}
+.on-header li {
+  background: url(../Images/Icons/check-mark.png) no-repeat 0;
+  padding-left: 35px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+@media (max-width: 920px) {
+  header article {
+    float: none;
+  }
+  header article h1 {
+    text-align: center;
+  }
+  header article ul {
+    margin: 0 20%;
+  }
+  header .additional-block {
+    float: none;
+    margin: 30px 20% 0 20%;
+    width: 60%;
+  }
+}
+main .about-your-product,
+main .dignity-and-pluses-product,
+main .scrinshots,
+main .contacts,
+main .buy-it-now,
+main .reviews {
+  padding: 50px;
+}
+main .reviews {
+  background: #f5f5f5;
+}
+main .contacts {
+  background: #445162;
+  overflow: hidden;
+}
+h2 {
+  color: #445162;
+  font-size: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+main .contacts h2 {
+  color: #ffffff;
+}
+main p,
+main .dignity-and-pluses-product ul li {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+}
+main .about-your-product {
+  overflow: hidden;
+}
+main .about-your-product article {
+  float: left;
+  width: 56%;
+}
+main .about-your-product h2 {
+  text-align: left;
+}
+p {
+  text-align: justify;
+}
+main .about-your-product p {
+  margin-bottom: 11px;
+}
+main .about-your-product p:last-child {
+  margin-bottom: 0;
+}
+main video {
+  background: #ffffff;
+  float: right;
+  width: 35%;
+  height: 30%;
+  object-fit: fill;
+  object-position: center center;
+}
+@media (max-width: 900px) {
+  main .about-your-product article {
+    float: none;
+    width: 100%;
+  }
+  main video {
+    float: none;
+    margin: 30px 20% 0 20%;
+    width: 60%;
+  }
+}
+main .dignity-and-pluses-product {
+  background: #f5f5f5;
+}
+main .dignity-and-pluses-product ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+main .dignity-and-pluses-product ul li {
+  background: url(../Images/Icons/plus.png) no-repeat;
+  padding-left: 40px;
+  width: 45%;
+  margin-bottom: 15px;
+}
+main .dignity-and-pluses-product ul li:last-of-type,
+main .dignity-and-pluses-product ul li:nth-last-of-type(2) {
+  margin-bottom: 0;
+}
+@media (max-width: 1140px) {
+  main .dignity-and-pluses-product ul li {
+    width: 44%;
+  }
+}
+main .dignity-and-pluses-product ul li {
+  background: url(../Images/Icons/plus.png) no-repeat;
+  padding-left: 40px;
+  width: 44%;
+  margin-bottom: 15px;
+}
+@media (max-width: 900px) {
+  main .dignity-and-pluses-product ul {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main .dignity-and-pluses-product ul li {
+    width: 100%;
+  }
+  main .dignity-and-pluses-product ul li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+main .scrinshots .content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main .scrinshots article {
+  padding-bottom: 20px;
+  width: 49%;
+}
+h3 {
+  color: #445162;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+main .scrinshots article:last-of-type,
+main .scrinshots article:nth-last-of-type(2) {
+  padding-bottom: 0;
+}
+main .scrinshots img {
+  float: left;
+  max-width: 200px;
+  height: 150px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+@media (max-width: 900px) {
+  main .scrinshots article:nth-last-of-type(2) {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 882px) {
+  main .scrinshots .content {
+    text-align: center;
+  }
+  main .scrinshots img {
+    float: none;
+  }
+  main .scrinshots article h3 {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  main .scrinshots .content {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main .scrinshots img {
+    float: none;
+    margin: 0 30%;
+  }
+  main .scrinshots article {
+    width: 100%;
+  }
+  main .scrinshots article:nth-last-of-type(2) {
+    margin-bottom: 15px;
+  }
+  main .scrinshots article h3 {
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+main .reviews .bg-review::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -10px;
+  top: 27px;
+  background: #ebebeb;
+  transform: rotate(45deg);
+}
+main .reviews .bg-review {
+  position: relative;
+  background: #ebebeb;
+}
+main .reviews .content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main .reviews .group {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-bottom: 30px;
+}
+main .reviews .group:last-of-type,
+main .reviews .group:nth-last-of-type(2) {
+  margin-bottom: 0;
+}
+main .reviews img {
+  width: 76px;
+  height: 76px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+main .reviews p {
+  background: url(../Images/square.png) no-repeat left;
+  color: #333333;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.3;
+  width: 450px;
+  padding: 15px;
+}
+main .reviews aside {
+  color: #989898;
+  font-size: 14px;
+  padding: 0 15px 15px 15px;
+}
+@media (max-width: 1270px) {
+  main .reviews .content {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .reviews .group:nth-last-of-type(2) {
+    margin-bottom: 30px;
+  }
+}
+main .buy-it-now .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 50px;
+}
+main .buy-it-now section {
+  background: #445162;
+  width: 300px;
+  border-radius: 5px;
+}
+@media (max-width: 1180px) {
+  main .buy-it-now section:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+  main .buy-it-now .content {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+h5 {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+main .buy-it-now .price {
+  height: 50px;
+  margin: 0 2px;
+  padding: 10px 0;
+  background: #ffffff;
+}
+h4 {
+  font-size: 40px;
+  color: #445162;
+  text-align: center;
+  padding-top: 5px;
+}
+main .buy-it-now ol {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 15px 15px 15px 40px;
+}
+main .buy-it-now li:not(:last-child) {
+  margin-bottom: 10px;
+}
+main .buy-it-now button {
+  background: #ffffff;
+  width: 260px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 0 20px 15px 20px;
+  color: #445162;
+  font-size: 18px;
+  font-weight: 700;
+}
+main .contacts .content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .contacts form {
+  margin-right: 5%;
+  color: #445162;
+}
+main .contacts form input[type="text"],
+main .contacts form input[type="email"],
+main .contacts form input[type="tel"],
+main .contacts form input[type="color"],
+main .contacts form textarea {
+  width: 490px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  color: #445162;
+  font-style: normal;
+}
+textarea::-webkit-input-placeholder {
+  color: #445162;
+}
+textarea:-moz-placeholder {
+  color: #445162;
+}
+input::-webkit-input-placeholder {
+  color: #445162;
+}
+input::-moz-placeholder {
+  color: #445162;
+}
+main .contacts form input {
+  height: 23px;
+}
+main .contacts form textarea {
+  resize: none;
+  height: 171px;
+  font-family: 'Arial', sans-serif;
+}
+main .contacts form input[type="submit"] {
+  width: 141px;
+  height: 40px;
+  margin: 0 35%;
+  background: #f5f5f5;
+  border-radius: 6px;
+  color: #445162;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main .contacts address img {
+  float: left;
+}
+main .contacts address aside {
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 30px;
+  font-style: normal;
+  line-height: 28px;
+}
+main .contacts address .several-icons {
+  margin-top: 10px;
+  overflow: hidden;
+}
+main .contacts address .several-icons img {
+  margin-right: 5px;
+}
+@media (max-width: 1000px) {
+  main .contacts .content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main .contacts .content form {
+    padding-bottom: 30px;
+  }
+}
+footer {
+  padding: 10px 0;
+}
+footer p {
+  color: #445162;
+  font-size: 12px;
+  text-align: center;
+}
